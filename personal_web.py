@@ -1,24 +1,31 @@
 import streamlit as st
 from PIL import Image
 
+st.set_page_config(
+    page_title="🚀 Vidit's Porfolio Page 🚀",
+    page_icon=":male-technologist:",
+)
+
 with open("style.css") as f:
     st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
+
 
 #####################
 # Header 
 st.write('''
-# Chanin Nantasenamat, Ph.D.
-##### *Resume* 
+# Vidit Bhatwadekar
 ''')
+
+
 
 image = Image.open('dp.jpg')
 st.image(image, width=150)
 
 st.markdown('## Summary', unsafe_allow_html=True)
 st.info('''
-- Experienced Educator, Researcher and Administrator with almost twenty years of experience in data-oriented environment and a passion for delivering insights based on predictive modeling. 
-- Strong verbal and written communication skills as demonstrated by extensive participation as invited speaker at `10` conferences as well as publishing 149 research articles.
-- Strong track record in scholarly research with H-index of `32` and total citation of 3200+.
+- UC Berkeley senior with experience in Software Engineering and Data Science. 
+- Interested in back-end development, data engineering, machine learning, and data science.
+- Strong communicator, fast learner, and proficient programmer as demonstrated by various projects, extracurriculars, and internships.
 ''')
 
 #####################
@@ -28,14 +35,14 @@ st.markdown('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootst
 
 st.markdown("""
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #16A2CB;">
-  <a class="navbar-brand" href="https://youtube.com/dataprofessor" target="_blank">Chanin Nantasenamat</a>
+  <a class="navbar-brand" target="_blank" id="top">Vidit Bhatwadekar</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link disabled" href="/">Home <span class="sr-only">(current)</span></a>
+      <li class="nav-item">
+        <a class="nav-link" href="#vidit-bhatwadekar">Summary</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#education">Education</a>
@@ -91,78 +98,49 @@ st.markdown('''
 ## Education
 ''')
 
-txt('**Doctor of Philosophy** (Medical Technology), *Mahidol University*, Thailand',
-'2002-2006')
+txt('**University of California, Berkeley**', 'Aug 2018 - Dec 2022')
+
+txt('B.A. in Data Science *(Emphasis in Applied Mathematics and Modelling)*',
+'')
+
 st.markdown('''
-- GPA: `3.89`
-- Research thesis entitled `Computer-aided molecular design for biological and chemical applications : Quantum chemical and machine learning approach`.
-- Received Royal Golden Jubilee Ph.D. Scholarship of `2.152 million THB` covering tuition and stipend.
-- Thesis awarded `1st` Prize by the National Research Council of Thailand.
+- Relevant Courses: `Machine Learning`, `Data Engineering`, `Data Mining`, `Artificial Intelligence`, `Inference and Decision Theory`, `Data Structures`, `Structure of Computer Programs`, `Linear Algebra and Differential Equations`, `Multivariable Calculus`, `Non-linear and Discrete Optimization`, `Principles of Data Science`, `Economic Modelling`, `Probability`
+- Activities and Societies: `DiversaTech Consulting`, `Student Association for Applied Statistics (SAAS)`, `DataGood`, `Intermural Soccer`, `Intermural Basketball`
 ''')
 
-txt('**Bachelors of Science** (Biological Science), *Mahidol University International College*, Thailand',
-'1998-2002')
-st.markdown('''
-- GPA: `3.65`
-- Graduated with First Class Honors.
-''')
 
 #####################
 st.markdown('''
 ## Work Experience
 ''')
 
-txt('**Head, Center of Data Mining and Biomedical Informatics**, Faculty of Medical Technology, Mahidol University, Thailand',
-'2011-2021')
+txt('**Software Engineer Intern**, Privé Technologies | *Hong Kong S.A.R*',
+'Jun 2021 - Aug 2021')
 st.markdown('''
-- Managing a Center of `10` professors, researchers and students to ensure KPIs are strategically achieved namely to publish at least `20+` research publications annually. 
-- Actively took part in the talent hiring process as well as help employees to plan and develop their career path.
-- Set budget and handle procurement in order to facilitate education and research activities. Secured `> 10 million THB` budget.
-- Set and reflect on OKR on an annual basis to ensure productivity strategically matches the organization's direction.
+- Streamlined the process of client-data-parser testing by `30 mins` by assembling a library of wrapper functions to apply a legacy parser implementation to current client data
+- Designed a metric to measure the similarity between parser outputs
+- Expedited the process of building a new parser for the client-data-hub team by building a parser comparison tool which utilizes the above metric to compare client-data-parsers
+- Aided in the building of future client-data-parsers by writing comprehensive unit tests to ensure the reliability of the parser comparison tool
+- Used `Python`, `Git/Github`, `XML`, `Pandas`
 ''')
 
-txt('**Associate Professor**, Faculty of Medical Technology, Mahidol University, Thailand',
-'2012-2021')
-txt('**Assistant Professor**, Faculty of Medical Technology, Mahidol University, Thailand',
-'2009-2012')
-txt('**Lecturer**, Faculty of Medical Technology, Mahidol University, Thailand',
-'2006-2009')
+txt('**Software & Data Intern**, AtHum | *Remote (United States)*',
+'Feb 2020 - Aug 2020')
 st.markdown('''
-- Provided mentorship and supervision to junior faculty, researchers, Ph.D./M.Sc./B.Sc. students. Mentored `3` Post-doctoral fellows, supervised `13` Ph.D. students, supervised `8` M.Sc. students, supervised `13` B.Sc. students and hosted `6` visiting students from U.S., Sweden and India.
-- Wrote and applied for research grants. Served as Principal Investigator for research grants that have been awarded `12.5 million THB` and `1.117 million SEK` in research funding from Thai and Swedish grant agencies.
-- Conducted research by applying machine learning to computational drug discovery and ensuring that research output exceeds `20+` articles per year.
-- Taught `10+` undergraduate/graduate classes on Bioinformatics, Data Mining, Scientific Research and Presentation, Research Methodology, Graduate Seminar, Programming for Health Data Science, etc.
-- Peer reviewed `100+` research articles for leading scientific journals.
+- Assembled a highly accurate straight-line detector `(99% of clearly visible straight lines detected)` by applying the Hough Transform to images using the OpenCV library - this detector was used in the development of an augmented reality apartment designer web application
+- Built a set of tools, using pandas, to clean and encode client survey data to be used in the building of a Natural Language Processing model
+- Programmed a tool to calculate the thematic "Jaccard Similarity" between descriptions of rooms in survey data
+- Assembled an preliminary 30-D Word2Vec model using Keras to use for mean-values in the subsequent building of a Gaussian Mixture Model for thematic room descriptors
+- Used `Python`, `Pandas`, `OpenCV`, `ScikitLearn`, `Keras/Tensorflow`, `Docker`
 ''')
 
-txt('**Co-Chair**, International Conference on Pharmaceutical Bioinformatics at Pattaya, Thailand',
-'2016')
+txt('**Software Engineer Intern**, OliveX | *Hong Kong S.A.R*',
+'Jun 2019 - Aug 2019')
 st.markdown('''
-- Oversee all aspects of the conference preparations from conception to launch. This include inviting keynote and plenary speakers, create advertisement flyers, create abstract book, etc.
-- Conference attracted `200+` participants from `40+` countries from university and industry sector.
-- Chaired keynote session, technical workshop and some of the parallel sessions.
-''')
-
-txt('**Content Creator**, [Data Professor YouTube Channel](https://youtube.com/dataprofessor/)',
-'2019-Present')
-st.markdown('''
-- `100,000+` subscribers on YouTube
-- Created `261` educational videos on data science, machine learning and bioinformatics as well as hosted several podcast episodes with data scientists.
-- Created `3` sponsored videos for Notion, Gradio and Classpert.
-''')
-
-txt('**Content Creator**, [Coding Professor YouTube Channel](https://youtube.com/codingprofessor/)',
-'2019-Present')
-st.markdown('''
-- `3,200+` subscribers on YouTube
-- Created `38` educational videos on Python and R programming.
-''')
-
-txt('**Technical Writer**, [Data Professor Blog](https://data-professor.medium.com/) on Medium.com',
-'2019-Present')
-st.markdown('''
-- `4,100+` subscribers on Medium
-- Written `68` technical blogs on data science, machine learning and bioinformatics.
+- Improved the performance of a pose-detection computer vision model by `8%` by adapting and upgrading an open-source image tagging software, written in Javascript, to add additional body tagging locations - including a "z-axis" indicator variable
+- The above pose-detection computer vision model is used in the company’s proprietary KARA fitness mirror to detect exercise repetitions
+- Streamlined the process of training the pose-detection computer vision model by `5 hours` by developing a JSON file parser which combined multiple COCO format JSON datasets
+- Used `Javascript`, `Node.js`, `Python`, `Git/Github`
 ''')
 
 #####################
