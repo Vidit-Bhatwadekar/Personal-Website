@@ -23,7 +23,7 @@ st.image(image, width=150)
 
 st.markdown('## Summary', unsafe_allow_html=True)
 st.info('''
-- UC Berkeley senior with experience in Software Engineering and Data Science. 
+- UC Berkeley senior with experience in software engineering and data science. 
 - Interested in back-end development, data engineering, machine learning, and data science.
 - Strong communicator, fast learner, and proficient programmer as demonstrated by various projects, extracurriculars, and internships.
 ''')
@@ -51,7 +51,10 @@ st.markdown("""
         <a class="nav-link" href="#work-experience">Work Experience</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#bioinformatics-tools">Bioinformatics Tools</a>
+        <a class="nav-link" href="#extracurricular-activities">Extracurricular Activities</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#skills">Skills</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#social-media">Social Media</a>
@@ -93,7 +96,7 @@ def txt4(a, b, c):
   with col3:
     st.markdown(c)
 
-#####################
+##################### Education
 st.markdown('''
 ## Education
 ''')
@@ -109,7 +112,7 @@ st.markdown('''
 ''')
 
 
-#####################
+##################### Work Experience
 st.markdown('''
 ## Work Experience
 ''')
@@ -143,6 +146,133 @@ st.markdown('''
 - Used `Javascript`, `Node.js`, `Python`, `Git/Github`
 ''')
 
+##################### Projects
+
+with st.container():
+    st.write("---")
+    st.header("Portfolio")
+    st.write("##")
+
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        st.image("https://csharpcorner-mindcrackerinc.netdna-ssl.com/UploadFile/NewsImages/08172020000734AM/Learn-Python.png")
+        st.subheader("Excel Row Splitter")
+        st.write("Splits large xlsx/csv files at a given row and saves it in new xlsx/csv files.")
+        if st.button('Enter App', key="ews_enter"):
+            js = "window.open('https://github.com/ratherUsefulCode')"  # New tab or window
+            html = '<img src onerror="{}">'.format(js)
+            div = Div(text=html)
+            st.write('Web Application opens in new browser tab')
+            st.bokeh_chart(div)
+        if st.button('Github', key="ews_github"):
+            st.write('Github opens in new browser tab')
+            js = "window.open('https://github.com/ratherUsefulCode/excel-row-splitter')"  # New tab or window
+            html = '<img src onerror="{}">'.format(js)
+            div = Div(text=html)
+            st.bokeh_chart(div)
+    with col2:
+        st.image("https://csharpcorner-mindcrackerinc.netdna-ssl.com/UploadFile/NewsImages/08172020000734AM/Learn-Python.png")
+        st.subheader("Github E-Mail Exposer")
+        st.write("Expose all E-Mail addresses contributing to a given Github account.")
+        if st.button('Enter App', key="gee_enter"):
+            js = "window.open('https://github.com/ratherUsefulCode/github-email-exposer')"  # New tab or window
+            html = '<img src onerror="{}">'.format(js)
+            div = Div(text=html)
+            st.write('Web Application opens in new browser tab')
+            st.bokeh_chart(div)
+        if st.button('Github', key="gee_github"):
+            st.write('Github opens in new browser tab')
+            js = "window.open('https://github.com/ratherUsefulCode/github-email-exposer')"  # New tab or window
+            html = '<img src onerror="{}">'.format(js)
+            div = Div(text=html)
+            st.bokeh_chart(div)
+    with col3:
+        st.image("https://csharpcorner-mindcrackerinc.netdna-ssl.com/UploadFile/NewsImages/08172020000734AM/Learn-Python.png")
+        st.subheader("Crypto Currency Watchlist")
+        st.write("Django web application that shows some basic data of your favourite crypto currencies.")
+        if st.button('Enter App', key="ccw_enter"):
+            js = "window.open('https://crypto-watchlist-rather-to.herokuapp.com/')"  # New tab or window
+            html = '<img src onerror="{}">'.format(js)
+            div = Div(text=html)
+            st.write('Web Application opens in new browser tab')
+            st.bokeh_chart(div)
+        if st.button('Github', key="ccw_github"):
+            st.write('Github opens in new browser tab')
+            js = "window.open('https://github.com/ratherUsefulCode/')"  # New tab or window
+            html = '<img src onerror="{}">'.format(js)
+            div = Div(text=html)
+            st.bokeh_chart(div)
+
+
+with st.container():
+    col4, col5, col6 = st.columns(3)
+    with col4:
+        st.image("https://csharpcorner-mindcrackerinc.netdna-ssl.com/UploadFile/NewsImages/08172020000734AM/Learn-Python.png")
+        st.subheader("QR Codes Reader and Generator")
+        st.write("Create and/or read every QR code.")
+        if st.button('Enter App', key="qrc_enter"):
+            st.write('Web Application opens in new browser tab')
+        if st.button('Github', key="qrc_github"):
+            st.write('Github opens in new browser tab')
+            js = "window.open('https://github.com/ratherUsefulCode/github-email-exposer')"  # New tab or window
+            html = '<img src onerror="{}">'.format(js)
+            div = Div(text=html)
+            st.bokeh_chart(div)
+    with col5:
+        st.image("https://csharpcorner-mindcrackerinc.netdna-ssl.com/UploadFile/NewsImages/08172020000734AM/Learn-Python.png")
+        st.subheader("Portfolio Website made with Streamlit")
+        st.write("Portfolio Website made with Python/Streamlit.")
+        if st.button('Enter App', key="spw_enter"):
+            st.write('You are already on the streamlit portfolio website 😃')
+        if st.button('Github', key="spw_github"):
+            st.write('Github opens in new browser tab')
+            js = "window.open('https://github.com/ratherUsefulCode/streamlit-portfolio-page')"  # New tab or window
+            html = '<img src onerror="{}">'.format(js)
+            div = Div(text=html)
+            st.bokeh_chart(div)
+    with col6:
+        st.image("https://csharpcorner-mindcrackerinc.netdna-ssl.com/UploadFile/NewsImages/08172020000734AM/Learn-Python.png")
+        st.subheader("Portfolio Website made with Bootstrap")
+        st.write("Portfolio Website made with HTML/Bootstrap.")
+        if st.button('Enter App'):
+            js = "window.open('https://rather.to')"  # New tab or window
+            html = '<img src onerror="{}">'.format(js)
+            div = Div(text=html)
+            st.bokeh_chart(div)
+            st.write('Web Application opens in new browser tab')
+        if st.button('Github', key="bpw_github"):
+            js = "window.open('https://github.com/ratherUsefulCode/rather-to')"  # New tab or window
+            html = '<img src onerror="{}">'.format(js)
+            div = Div(text=html)
+            st.bokeh_chart(div)
+
+##################### ExtraCurriculars
+st.markdown('''
+## Extracurricular Activities
+''')
+
+txt('#### **DiversaTech Consulting**',
+'')
+
+txt('*Project Manager* | Oracle','Spring 2021')
+st.markdown(
+  '''
+  Project Manager for strategy consulting project with client, Oracle, involving 
+  '''
+)
+
+txt('*Consultant*','2019 - 2020')
+st.markdown(
+  '''
+  Strategy consultant for UC Berkeley's premier tech consulting group
+  - **Spring 19'** *(Microsoft)*: Conducted user research to aid in the planning of new marketing strategy for major suite of products. Designed and presented a slideshow of our ideas to client. 
+  - **Fall 19'** *(Keysight Technologies)*: Tested and proposed UI/UX improvements for major B2B software product.
+  - **Spring 20'** *(LinkedIn)*: Blueprinted a major feature launch for our client, LinkedIn - Prototyped ideas using Figma.
+  - **Fall 20'** *(Qoakka Brew)*: Designed UI/UX of the iOS app for QuokkaBrew using Figma.
+  '''
+)
+
+
 #####################
 st.markdown('''
 ## Bioinformatics Tools
@@ -170,13 +300,9 @@ txt4('THPep', 'A web server for predicting tumor homing peptides','http://codes.
 st.markdown('''
 ## Skills
 ''')
-txt3('Programming', '`Python`, `R`, `Linux`')
-txt3('Data processing/wrangling', '`SQL`, `pandas`, `numpy`')
-txt3('Data visualization', '`matplotlib`, `seaborn`, `plotly`, `altair`, `ggplot2`')
-txt3('Machine Learning', '`scikit-learn`')
-txt3('Deep Learning', '`TensorFlow`')
-txt3('Web development', '`Flask`, `HTML`, `CSS`')
-txt3('Model deployment', '`streamlit`, `gradio`, `R Shiny`, `Heroku`, `AWS`, `Digital Ocean`')
+txt3('Languages', '`Python`, `SQL`, `Java`, `Swift`, `Javascript`, `R`, `HTML`, `CSS`, `Bash`, `LATEX`')
+txt3('Libraries & Frameworks', '`pandas`, `Flask`, `scikitlearn`, `matplotlib`, `streamlit`, `seaborn`, `OpenCV`, `Tensorflow/Keras`, `node.js`, `Selenium`, `ggplot2`')
+txt3('Tools', '`Git/Github`, `Heroku`, `Docker`, `Postman`, `AWS`, `SQLite`, `Anaconda`')
 
 #####################
 st.markdown('''
@@ -192,3 +318,24 @@ txt2('Scopus', 'http://www.scopus.com/authid/detail.url?authorId=12039071300')
 txt2('ResearcherID', 'http://www.researcherid.com/rid/F-1021-2010')
 txt2('ResearchGate', 'https://www.researchgate.net/profile/Chanin_Nantasenamat')
 txt2('Publons', 'https://publons.com/a/303133/')
+
+
+############# Contact
+
+with st.container():
+    st.write("---")
+    st.markdown("<h2 style='text-align: center;'>Contact</h2>", unsafe_allow_html=True)
+    st.write("##")
+
+    col1, col2, col3 = st.columns(3)
+    with col2:
+        contact_form = """
+        <form action="https://formsubmit.co/805cc992f02da35ae356f2451ece18be" method="POST">
+            <input type="hidden" name="_captcha" value="true">
+            <input type="text" name="name" placeholder="Your name" required>
+            <input type="email" name="email" placeholder="Your email" required>
+            <textarea name="message" placeholder="Your message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        """
+        st.markdown(contact_form, unsafe_allow_html=True)
