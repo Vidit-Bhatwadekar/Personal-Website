@@ -1,9 +1,11 @@
+from turtle import width
 import streamlit as st
 from PIL import Image
 
 st.set_page_config(
     page_title="🚀 Vidit's Porfolio Page 🚀",
     page_icon=":male-technologist:",
+    #layout = "wide"
 )
 
 with open("style.css") as f:
@@ -20,6 +22,8 @@ st.write('''
 
 image = Image.open('dp.jpg')
 st.image(image, width=150)
+
+
 
 st.markdown('## Summary', unsafe_allow_html=True)
 st.info('''
@@ -254,10 +258,14 @@ st.markdown('''
 txt('#### **DiversaTech Consulting**',
 '')
 
-txt('*Project Manager* | Oracle','Spring 2021')
+txt('*Project Manager* | Client: Oracle','Spring 2021')
 st.markdown(
   '''
-  Project Manager for strategy consulting project with client, Oracle, involving 
+  Project Manager for Oracle project involving go-to-market strategy for major product
+  - Led a team of 7 consultants in devising a coherent go-to-market-strategy for our client
+  - Worked as a liason between points of contact at Oracle and DiversaTech
+  - Organised meetings and planned timelines for deliverables
+  - Mentored young consultants and aided them in developing new skillsets for future projects
   '''
 )
 
@@ -272,28 +280,54 @@ st.markdown(
   '''
 )
 
+txt('#### **Student Association for Applied Statistics (SAAS)**',
+'')
+txt('*Data Science Consultant*','Fall 2021')
+st.markdown(
+  '''
+  Data Science consultant for SAAS, working on building marketing mix model and pipeline for major marketing agency, Media Matters Worldwide.
+  - Created functions to clean and engineer features using pandas
+  - Tested and evaluated various Machine Learning Models using cross-validation
+  - Presented work to client, involving getting into technical details about Machine Learning
+  - Built and demoed data pipeline to clients
+  - Used `Python`, `pandas`, `scikitlearn`, `matplotlib`, `jupyter`
+  - [Presentation](https://drive.google.com/file/d/1LLP7wWIhsKrbEsbJk3cRgQi9IRgR8cGW/view?usp=sharing)
+  '''
+)
+
+txt('*Data Science Researcher*','Spring 2021')
+st.markdown(
+  '''
+  Worked as Data Science Researcher representing SAAS for a economic/data science project
+  - Conducted statistical analysis into the volatility and valuation of the US stock market during the pandemic and other Black Swan Events
+  - Compiled research into a write-up and presented in at UC Berkeley's annual ML and Data research symposium
+  - Used `Python`, `pandas`, `matplotlib/seaborn`, `R`, FRED Economic Data, Various financial APIs
+  - [Write up](https://drive.google.com/file/d/1shzwlccTI4O84qt_cr65aFeRlhVUgSvP/view?usp=sharing) and [Presentation](https://drive.google.com/file/d/1-Asyw-Zfm1SrSJbn-LUhE-iM7pt_rDe5/view?usp=sharing)
+  '''
+)
+
 
 #####################
-st.markdown('''
-## Bioinformatics Tools
-''')
-txt4('ABCpred', 'A web server for the discovery of acetyl- and butyryl-cholinesterase inhibitors', 'http://codes.bio/abcpred/')
-txt4('AutoWeka', 'An automated data mining software based on Weka', 'http://www.mt.mahidol.ac.th/autoweka/')
-txt4('ACPred', 'A computational tool for the prediction and analysis of anticancer peptides','http://codes.bio/acpred/')
-txt4('BioCurator', 'A web server for curating ChEMBL bioactivity data', 'http://codes.bio/biocurator/')
-txt4('CryoProtect', 'A web server for classifying antifreeze proteins from non-antifreeze proteins','http://codes.bio/cryoprotect/')
-txt4('ERpred', 'A web server for the prediction of subtype-specific estrogen receptor antagonists', 'http://codes.bio/erpred')
-txt4('HCVpred', 'A web server for predicting the bioactivity of Hepatitis C virus NS5B inhibitors', 'http://codes.bio/hemopred/')
-txt4('HemoPred', 'A web server for predicting the hemolytic activity of peptides', 'http://codes.bio/hemopred/')
-txt4('iQSP', 'A sequence-based tool for the prediction and analysis of quorum sensing peptides', 'http://codes.bio/iqsp/')
-txt4('Meta-iAVP', 'A sequence-based meta-predictor for improving the prediction of antiviral peptides', 'http://codes.bio/meta-iavp/')
-txt4('osFP', 'A web server for predicting the oligomeric state of fluorescent proteins', 'http://codes.bio/osfp/')
-txt4('PAAP', 'A web server for predicting antihypertensive activity of peptides', 'http://codes.bio/paap/')
-txt4('PepBio', 'A web server for predicting the bioactivity of host defense peptide', 'http://codes.bio/pepbio')
-txt4('PyBact', 'Open source software written in Python for bacterial identification', 'https://sourceforge.net/projects/pybact/')
-txt4('TargetAntiAngio', 'A sequence-based tool for the prediction and analysis of anti-angiogenic peptides','http://codes.bio/targetantiangio/')
-txt4('ThalPred', 'Development of decision model for discriminating Thalassemia trait and Iron deficiency anemia','http://codes.bio/thalpred/')
-txt4('THPep', 'A web server for predicting tumor homing peptides','http://codes.bio/thpep/')
+# st.markdown('''
+# ## Bioinformatics Tools
+# ''')
+# txt4('ABCpred', 'A web server for the discovery of acetyl- and butyryl-cholinesterase inhibitors', 'http://codes.bio/abcpred/')
+# txt4('AutoWeka', 'An automated data mining software based on Weka', 'http://www.mt.mahidol.ac.th/autoweka/')
+# txt4('ACPred', 'A computational tool for the prediction and analysis of anticancer peptides','http://codes.bio/acpred/')
+# txt4('BioCurator', 'A web server for curating ChEMBL bioactivity data', 'http://codes.bio/biocurator/')
+# txt4('CryoProtect', 'A web server for classifying antifreeze proteins from non-antifreeze proteins','http://codes.bio/cryoprotect/')
+# txt4('ERpred', 'A web server for the prediction of subtype-specific estrogen receptor antagonists', 'http://codes.bio/erpred')
+# txt4('HCVpred', 'A web server for predicting the bioactivity of Hepatitis C virus NS5B inhibitors', 'http://codes.bio/hemopred/')
+# txt4('HemoPred', 'A web server for predicting the hemolytic activity of peptides', 'http://codes.bio/hemopred/')
+# txt4('iQSP', 'A sequence-based tool for the prediction and analysis of quorum sensing peptides', 'http://codes.bio/iqsp/')
+# txt4('Meta-iAVP', 'A sequence-based meta-predictor for improving the prediction of antiviral peptides', 'http://codes.bio/meta-iavp/')
+# txt4('osFP', 'A web server for predicting the oligomeric state of fluorescent proteins', 'http://codes.bio/osfp/')
+# txt4('PAAP', 'A web server for predicting antihypertensive activity of peptides', 'http://codes.bio/paap/')
+# txt4('PepBio', 'A web server for predicting the bioactivity of host defense peptide', 'http://codes.bio/pepbio')
+# txt4('PyBact', 'Open source software written in Python for bacterial identification', 'https://sourceforge.net/projects/pybact/')
+# txt4('TargetAntiAngio', 'A sequence-based tool for the prediction and analysis of anti-angiogenic peptides','http://codes.bio/targetantiangio/')
+# txt4('ThalPred', 'Development of decision model for discriminating Thalassemia trait and Iron deficiency anemia','http://codes.bio/thalpred/')
+# txt4('THPep', 'A web server for predicting tumor homing peptides','http://codes.bio/thpep/')
 
 
 #####################
@@ -308,16 +342,10 @@ txt3('Tools', '`Git/Github`, `Heroku`, `Docker`, `Postman`, `AWS`, `SQLite`, `An
 st.markdown('''
 ## Social Media
 ''')
-txt2('LinkedIn', 'https://www.linkedin.com/in/chanin-nantasenamat')
-txt2('Twitter', 'https://twitter.com/thedataprof')
-txt2('GitHub', 'https://github.com/chaninn/')
-txt2('', 'https://github.com/chaninlab/')
-txt2('', 'https://github.com/dataprofessor')
-txt2('ORCID', 'http://orcid.org/0000-0003-1040-663X')
-txt2('Scopus', 'http://www.scopus.com/authid/detail.url?authorId=12039071300')
-txt2('ResearcherID', 'http://www.researcherid.com/rid/F-1021-2010')
-txt2('ResearchGate', 'https://www.researchgate.net/profile/Chanin_Nantasenamat')
-txt2('Publons', 'https://publons.com/a/303133/')
+txt2('LinkedIn', 'https://www.linkedin.com/in/vidit-bhatwadekar/')
+txt2('GitHub', 'https://github.com/Vidit-Bhatwadekar')
+txt2('Instagram', 'https://www.instagram.com/viditbhatwadekar/')
+
 
 
 ############# Contact
