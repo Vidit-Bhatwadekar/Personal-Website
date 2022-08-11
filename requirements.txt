@@ -1,5 +1,4 @@
 bokeh==2.4.1
 Pillow==9.2.0
-requests==2.27.1
 streamlit==1.6.0
-streamlit_lottie==0.0.3
+turtle
