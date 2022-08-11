@@ -1,11 +1,12 @@
 from turtle import width
 import streamlit as st
 from PIL import Image
+from bokeh.models.widgets import Div
+from streamlit_lottie import st_lottie
 
 st.set_page_config(
     page_title="🚀 Vidit's Porfolio Page 🚀",
     page_icon=":male-technologist:",
-    #layout = "wide"
 )
 
 with open("style.css") as f:
@@ -20,12 +21,12 @@ st.write('''
 
 
 
-image = Image.open('dp.jpg')
+image = Image.open('images/circle.png')
 st.image(image, width=150)
 
 
 
-st.markdown('## Summary', unsafe_allow_html=True)
+st.markdown('# Summary', unsafe_allow_html=True)
 st.info('''
 - UC Berkeley senior with experience in software engineering and data science. 
 - Interested in back-end development, data engineering, machine learning, and data science.
@@ -55,10 +56,13 @@ st.markdown("""
         <a class="nav-link" href="#work-experience">Work Experience</a>
       </li>
       <li class="nav-item">
+        <a class="nav-link" href="#projects">Projects</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link" href="#extracurricular-activities">Extracurricular Activities</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#tech-stack">Tech Stack</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#social-media">Social Media</a>
@@ -102,7 +106,7 @@ def txt4(a, b, c):
 
 ##################### Education
 st.markdown('''
-## Education
+# Education
 ''')
 
 txt('**University of California, Berkeley**', 'Aug 2018 - Dec 2022')
@@ -118,7 +122,7 @@ st.markdown('''
 
 ##################### Work Experience
 st.markdown('''
-## Work Experience
+# Work Experience
 ''')
 
 txt('**Software Engineer Intern**, Privé Technologies | *Hong Kong S.A.R*',
@@ -150,36 +154,34 @@ st.markdown('''
 - Used `Javascript`, `Node.js`, `Python`, `Git/Github`
 ''')
 
+    
+
 ##################### Projects
 
 with st.container():
     st.write("---")
-    st.header("Portfolio")
+    st.markdown("# Projects")
     st.write("##")
 
-    col1, col2, col3 = st.columns(3)
+    col1, col2 = st.columns(2)
     with col1:
-        st.image("https://csharpcorner-mindcrackerinc.netdna-ssl.com/UploadFile/NewsImages/08172020000734AM/Learn-Python.png")
-        st.subheader("Excel Row Splitter")
-        st.write("Splits large xlsx/csv files at a given row and saves it in new xlsx/csv files.")
+        st.subheader("**okbr Meme and Quote Generator**")
+        st.write("*A web app, deployed using Heroku, which displays a random meme and quotation from a major Reddit meme page. Used PRAW Reddit API to scrape image and text data from a meme reddit page.* *Used* `Python`, `pandas`, `streamlit`, `heroku`, `PRAW api`")
         if st.button('Enter App', key="ews_enter"):
-            js = "window.open('https://github.com/ratherUsefulCode')"  # New tab or window
+            js = "window.open('https://okbr-memes.herokuapp.com/')"  # New tab or window
             html = '<img src onerror="{}">'.format(js)
             div = Div(text=html)
-            st.write('Web Application opens in new browser tab')
             st.bokeh_chart(div)
         if st.button('Github', key="ews_github"):
-            st.write('Github opens in new browser tab')
-            js = "window.open('https://github.com/ratherUsefulCode/excel-row-splitter')"  # New tab or window
+            js = "window.open('https://github.com/Vidit-Bhatwadekar/RedditMemeWebApp')"  # New tab or window
             html = '<img src onerror="{}">'.format(js)
             div = Div(text=html)
             st.bokeh_chart(div)
     with col2:
-        st.image("https://csharpcorner-mindcrackerinc.netdna-ssl.com/UploadFile/NewsImages/08172020000734AM/Learn-Python.png")
-        st.subheader("Github E-Mail Exposer")
-        st.write("Expose all E-Mail addresses contributing to a given Github account.")
+        st.subheader("**Personal Resume and Portfolio Website (This site)**")
+        st.write("*Expose all E-Mail addresses contributing to a given Github account.*")
         if st.button('Enter App', key="gee_enter"):
-            js = "window.open('https://github.com/ratherUsefulCode/github-email-exposer')"  # New tab or window
+            js = "window.open('')"  # New tab or window
             html = '<img src onerror="{}">'.format(js)
             div = Div(text=html)
             st.write('Web Application opens in new browser tab')
@@ -190,29 +192,28 @@ with st.container():
             html = '<img src onerror="{}">'.format(js)
             div = Div(text=html)
             st.bokeh_chart(div)
-    with col3:
-        st.image("https://csharpcorner-mindcrackerinc.netdna-ssl.com/UploadFile/NewsImages/08172020000734AM/Learn-Python.png")
-        st.subheader("Crypto Currency Watchlist")
-        st.write("Django web application that shows some basic data of your favourite crypto currencies.")
-        if st.button('Enter App', key="ccw_enter"):
-            js = "window.open('https://crypto-watchlist-rather-to.herokuapp.com/')"  # New tab or window
-            html = '<img src onerror="{}">'.format(js)
-            div = Div(text=html)
-            st.write('Web Application opens in new browser tab')
-            st.bokeh_chart(div)
-        if st.button('Github', key="ccw_github"):
-            st.write('Github opens in new browser tab')
-            js = "window.open('https://github.com/ratherUsefulCode/')"  # New tab or window
-            html = '<img src onerror="{}">'.format(js)
-            div = Div(text=html)
-            st.bokeh_chart(div)
+    # with col3:
+    #     st.subheader("Crypto Currency Watchlist")
+    #     st.write("Django web application that shows some basic data of your favourite crypto currencies.")
+    #     if st.button('Enter App', key="ccw_enter"):
+    #         js = "window.open('https://crypto-watchlist-rather-to.herokuapp.com/')"  # New tab or window
+    #         html = '<img src onerror="{}">'.format(js)
+    #         div = Div(text=html)
+    #         st.write('Web Application opens in new browser tab')
+    #         st.bokeh_chart(div)
+    #     if st.button('Github', key="ccw_github"):
+    #         st.write('Github opens in new browser tab')
+    #         js = "window.open('https://github.com/ratherUsefulCode/')"  # New tab or window
+    #         html = '<img src onerror="{}">'.format(js)
+    #         div = Div(text=html)
+    #         st.bokeh_chart(div)
+
 
 
 with st.container():
-    col4, col5, col6 = st.columns(3)
+    col4, col5 = st.columns(2)
     with col4:
-        st.image("https://csharpcorner-mindcrackerinc.netdna-ssl.com/UploadFile/NewsImages/08172020000734AM/Learn-Python.png")
-        st.subheader("QR Codes Reader and Generator")
+        st.subheader("**QR Codes Reader and Generator**")
         st.write("Create and/or read every QR code.")
         if st.button('Enter App', key="qrc_enter"):
             st.write('Web Application opens in new browser tab')
@@ -223,7 +224,6 @@ with st.container():
             div = Div(text=html)
             st.bokeh_chart(div)
     with col5:
-        st.image("https://csharpcorner-mindcrackerinc.netdna-ssl.com/UploadFile/NewsImages/08172020000734AM/Learn-Python.png")
         st.subheader("Portfolio Website made with Streamlit")
         st.write("Portfolio Website made with Python/Streamlit.")
         if st.button('Enter App', key="spw_enter"):
@@ -234,25 +234,25 @@ with st.container():
             html = '<img src onerror="{}">'.format(js)
             div = Div(text=html)
             st.bokeh_chart(div)
-    with col6:
-        st.image("https://csharpcorner-mindcrackerinc.netdna-ssl.com/UploadFile/NewsImages/08172020000734AM/Learn-Python.png")
-        st.subheader("Portfolio Website made with Bootstrap")
-        st.write("Portfolio Website made with HTML/Bootstrap.")
-        if st.button('Enter App'):
-            js = "window.open('https://rather.to')"  # New tab or window
-            html = '<img src onerror="{}">'.format(js)
-            div = Div(text=html)
-            st.bokeh_chart(div)
-            st.write('Web Application opens in new browser tab')
-        if st.button('Github', key="bpw_github"):
-            js = "window.open('https://github.com/ratherUsefulCode/rather-to')"  # New tab or window
-            html = '<img src onerror="{}">'.format(js)
-            div = Div(text=html)
-            st.bokeh_chart(div)
+    # with col6:
+    #     st.image("https://csharpcorner-mindcrackerinc.netdna-ssl.com/UploadFile/NewsImages/08172020000734AM/Learn-Python.png")
+    #     st.subheader("Portfolio Website made with Bootstrap")
+    #     st.write("Portfolio Website made with HTML/Bootstrap.")
+    #     if st.button('Enter App'):
+    #         js = "window.open('https://rather.to')"  # New tab or window
+    #         html = '<img src onerror="{}">'.format(js)
+    #         div = Div(text=html)
+    #         st.bokeh_chart(div)
+    #         st.write('Web Application opens in new browser tab')
+    #     if st.button('Github', key="bpw_github"):
+    #         js = "window.open('https://github.com/ratherUsefulCode/rather-to')"  # New tab or window
+    #         html = '<img src onerror="{}">'.format(js)
+    #         div = Div(text=html)
+    #         st.bokeh_chart(div)
 
 ##################### ExtraCurriculars
 st.markdown('''
-## Extracurricular Activities
+# Extracurricular Activities
 ''')
 
 txt('#### **DiversaTech Consulting**',
@@ -285,7 +285,7 @@ txt('#### **Student Association for Applied Statistics (SAAS)**',
 txt('*Data Science Consultant*','Fall 2021')
 st.markdown(
   '''
-  Data Science consultant for SAAS, working on building marketing mix model and pipeline for major marketing agency, Media Matters Worldwide.
+  Data Science consultant for SAAS, working on building marketing mix model and data pipeline for major marketing agency, Media Matters Worldwide.
   - Created functions to clean and engineer features using pandas
   - Tested and evaluated various Machine Learning Models using cross-validation
   - Presented work to client, involving getting into technical details about Machine Learning
@@ -330,9 +330,9 @@ st.markdown(
 # txt4('THPep', 'A web server for predicting tumor homing peptides','http://codes.bio/thpep/')
 
 
-#####################
+##################### Tech Stack
 st.markdown('''
-## Skills
+# Tech Stack
 ''')
 txt3('Languages', '`Python`, `SQL`, `Java`, `Swift`, `Javascript`, `R`, `HTML`, `CSS`, `Bash`, `LATEX`')
 txt3('Libraries & Frameworks', '`pandas`, `Flask`, `scikitlearn`, `matplotlib`, `streamlit`, `seaborn`, `OpenCV`, `Tensorflow/Keras`, `node.js`, `Selenium`, `ggplot2`')
@@ -340,7 +340,7 @@ txt3('Tools', '`Git/Github`, `Heroku`, `Docker`, `Postman`, `AWS`, `SQLite`, `An
 
 #####################
 st.markdown('''
-## Social Media
+# Social Media
 ''')
 txt2('LinkedIn', 'https://www.linkedin.com/in/vidit-bhatwadekar/')
 txt2('GitHub', 'https://github.com/Vidit-Bhatwadekar')
@@ -367,3 +367,19 @@ with st.container():
         </form>
         """
         st.markdown(contact_form, unsafe_allow_html=True)
+
+
+with st.container():
+    for i in range(8):
+        st.write("##")
+    st.write("---")
+    col1, col2 = st.columns(2)
+    with col1:
+        st.write(
+            """
+            Feel free to copy this page 👍
+            """
+        )
+    with col2:
+        st.markdown("<p style='text-align: right;'>Made in 2022 with Python, Streamlit, HTML and CSS</p>", unsafe_allow_html=True)
+    st.write("---")
