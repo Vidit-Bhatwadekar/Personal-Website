@@ -354,7 +354,7 @@ st.markdown('''
 ''')
 txt3('Languages', '`Python`, `SQL`, `Java`, `Swift`, `Javascript`, `R`, `HTML`, `CSS`, `Bash`, `LATEX`')
 txt3('Libraries & Frameworks', '`pandas`, `Flask`, `scikitlearn`, `matplotlib`, `streamlit`, `seaborn`, `OpenCV`, `Tensorflow/Keras`, `node.js`, `Selenium`, `ggplot2`')
-txt3('Tools', '`Git/Github`, `Heroku`, `Docker`, `Postman`, `AWS`, `SQLite`, `Anaconda`')
+txt3('Tools', '`Git/Github`, `Heroku`, `Docker`, `Postman`, `Streamlit Cloud`, `AWS`, `SQLite`, `Anaconda`')
 
 #####################
 st.markdown('''
