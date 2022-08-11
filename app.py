@@ -304,7 +304,7 @@ txt('*Data Science Consultant*','Fall 2021')
 st.markdown(
   '''
   Data Science consultant for SAAS, working on building marketing mix model and data pipeline for major marketing agency, Media Matters Worldwide.
-  - Created functions to clean and engineer features using pandas
+  - Created functions to clean data and engineer features using pandas
   - Tested and evaluated various Machine Learning Models using cross-validation
   - Presented work to client, involving getting into technical details about Machine Learning
   - Built and demoed data pipeline to clients
