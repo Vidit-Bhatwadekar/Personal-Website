@@ -1,4 +1,3 @@
-from turtle import width
 import streamlit as st
 from PIL import Image
 from bokeh.models.widgets import Div
