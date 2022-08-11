@@ -8,8 +8,36 @@ st.set_page_config(
     page_icon="👨‍💻",
 )
 
-with open("style.css") as f:
-    st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
+# with open("style.css") as f:
+#     st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
+st.markdown('''<style> 
+ul {
+    padding-left: 1.5rem;
+  }
+
+h1 {
+    text-align:center;
+}
+
+h5 {
+    text-align:center;
+}
+
+img {
+    margin-left: 17.2rem;
+}
+
+#MainMenu {
+    visibility: hidden;
+}
+footer {
+    visibility: hidden;
+}
+header {
+    visibility: hidden;
+}')
+</style>
+''', unsafe_allow_html=True)
 
 
 #####################
