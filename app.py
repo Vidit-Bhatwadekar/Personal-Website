@@ -205,7 +205,12 @@ with st.container():
             st.bokeh_chart(div)
     with col2:
         st.subheader("**Personal Resume and Portfolio Website (This site)**")
-        st.write("*Personal resume and project portfolio website showcasing my projects, extracurriculars and work experience. Used* `Python`, `Streamlit`, `HTML`, `CSS`")
+        st.write("*Personal resume and project portfolio website showcasing my projects, extracurriculars and work experience. Used* `Python`, `Streamlit`, `Streamlit Cloud`, `HTML`, `CSS`")
+        if st.button('Enter App', key="gee_enter"):
+            js = "window.open('https://vidit-bhatwadekar-personal-website-app-ygdngt.streamlitapp.com/')"  # New tab or window
+            html = '<img src onerror="{}">'.format(js)
+            div = Div(text=html)
+            st.bokeh_chart(div)
         if st.button('Github', key="gee_github"):
             js = "window.open('https://github.com/Vidit-Bhatwadekar/Personal-Website')"  # New tab or window
             html = '<img src onerror="{}">'.format(js)
