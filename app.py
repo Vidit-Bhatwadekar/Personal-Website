@@ -245,7 +245,7 @@ with st.container():
             div = Div(text=html)
             st.bokeh_chart(div)
     with col5:
-        st.subheader("**Portfolio Website made with Streamlit**")
+        st.subheader("**Computer Vision Face and Eyes Detector**")
         st.write("*Used OpenCV Cascade Classifier model to detect faces, eyes, and glasses on the webcam. Can also detect said images in jpg with an accuracy of above 90%. Used* `Python`, `OpenCV`")
         if st.button('Github', key="spw_github"):
             js = "window.open('https://github.com/Vidit-Bhatwadekar/FaceDetection')"  # New tab or window
