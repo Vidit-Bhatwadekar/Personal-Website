@@ -4,7 +4,7 @@ from bokeh.models.widgets import Div
 
 st.set_page_config(
     page_title="Vidit's Resume and Portfolio Page 🚀",
-    page_icon="👨‍💻",
+    page_icon= "👨‍💻"
 )
 
 # with open("style.css") as f:
