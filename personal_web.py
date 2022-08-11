@@ -179,16 +179,14 @@ with st.container():
             st.bokeh_chart(div)
     with col2:
         st.subheader("**Personal Resume and Portfolio Website (This site)**")
-        st.write("*Expose all E-Mail addresses contributing to a given Github account.*")
+        st.write("*Personal resume and project portfolio website showcasing my projects, extracurriculars and work experience. Used* `Python`, `Streamlit`, `HTML`, `CSS`")
         if st.button('Enter App', key="gee_enter"):
             js = "window.open('')"  # New tab or window
             html = '<img src onerror="{}">'.format(js)
             div = Div(text=html)
-            st.write('Web Application opens in new browser tab')
             st.bokeh_chart(div)
         if st.button('Github', key="gee_github"):
-            st.write('Github opens in new browser tab')
-            js = "window.open('https://github.com/ratherUsefulCode/github-email-exposer')"  # New tab or window
+            js = "window.open('https://github.com/Vidit-Bhatwadekar/Personal-Website')"  # New tab or window
             html = '<img src onerror="{}">'.format(js)
             div = Div(text=html)
             st.bokeh_chart(div)
@@ -213,24 +211,18 @@ with st.container():
 with st.container():
     col4, col5 = st.columns(2)
     with col4:
-        st.subheader("**QR Codes Reader and Generator**")
-        st.write("Create and/or read every QR code.")
-        if st.button('Enter App', key="qrc_enter"):
-            st.write('Web Application opens in new browser tab')
+        st.subheader("**Amazon Web Scraper**")
+        st.write("*Built an Amazon Scraper for a start-up called CL1CK which scraped and cleaned over 2500 Amazon reviews and product descriptions and stored it neatly in CSV format. This data was analysed by company to make strategic decisions. Used* `Python`, `Selenium`, `Pandas`")
         if st.button('Github', key="qrc_github"):
-            st.write('Github opens in new browser tab')
-            js = "window.open('https://github.com/ratherUsefulCode/github-email-exposer')"  # New tab or window
+            js = "window.open('https://github.com/Vidit-Bhatwadekar/AmazonWebScraper')"  # New tab or window
             html = '<img src onerror="{}">'.format(js)
             div = Div(text=html)
             st.bokeh_chart(div)
     with col5:
-        st.subheader("Portfolio Website made with Streamlit")
-        st.write("Portfolio Website made with Python/Streamlit.")
-        if st.button('Enter App', key="spw_enter"):
-            st.write('You are already on the streamlit portfolio website 😃')
+        st.subheader("**Portfolio Website made with Streamlit**")
+        st.write("*Used OpenCV Cascade Classifier model to detect faces, eyes, and glasses on the webcam. Can also detect said images in jpg with an accuracy of above 90%. Used* `Python`, `OpenCV`")
         if st.button('Github', key="spw_github"):
-            st.write('Github opens in new browser tab')
-            js = "window.open('https://github.com/ratherUsefulCode/streamlit-portfolio-page')"  # New tab or window
+            js = "window.open('https://github.com/Vidit-Bhatwadekar/FaceDetection')"  # New tab or window
             html = '<img src onerror="{}">'.format(js)
             div = Div(text=html)
             st.bokeh_chart(div)
@@ -350,27 +342,27 @@ txt2('Instagram', 'https://www.instagram.com/viditbhatwadekar/')
 
 ############# Contact
 
+# with st.container():
+#     st.write("---")
+#     st.markdown("<h2 style='text-align: center;'>Contact</h2>", unsafe_allow_html=True)
+#     st.write("##")
+
+#     col1, col2, col3 = st.columns(3)
+#     with col2:
+#         contact_form = """
+#         <form action="https://formsubmit.co/805cc992f02da35ae356f2451ece18be" method="POST">
+#             <input type="hidden" name="_captcha" value="true">
+#             <input type="text" name="name" placeholder="Your name" required>
+#             <input type="email" name="email" placeholder="Your email" required>
+#             <textarea name="message" placeholder="Your message" required></textarea>
+#             <button type="submit">Send</button>
+#         </form>
+#         """
+#         st.markdown(contact_form, unsafe_allow_html=True)
+
+
 with st.container():
-    st.write("---")
-    st.markdown("<h2 style='text-align: center;'>Contact</h2>", unsafe_allow_html=True)
-    st.write("##")
-
-    col1, col2, col3 = st.columns(3)
-    with col2:
-        contact_form = """
-        <form action="https://formsubmit.co/805cc992f02da35ae356f2451ece18be" method="POST">
-            <input type="hidden" name="_captcha" value="true">
-            <input type="text" name="name" placeholder="Your name" required>
-            <input type="email" name="email" placeholder="Your email" required>
-            <textarea name="message" placeholder="Your message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-        """
-        st.markdown(contact_form, unsafe_allow_html=True)
-
-
-with st.container():
-    for i in range(8):
+    for i in range(3):
         st.write("##")
     st.write("---")
     col1, col2 = st.columns(2)
