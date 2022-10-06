@@ -207,7 +207,7 @@ with st.container():
         st.subheader("**Personal Resume and Portfolio Website (This site)**")
         st.write("*Personal resume and project portfolio website showcasing my projects, extracurriculars and work experience. Used* `Python`, `Streamlit`, `Heroku`, `HTML`, `CSS`")
         if st.button('Enter App', key="gee_enter"):
-            js = "window.open('https://vidit-bhatwadekar-personal-website-app-ygdngt.streamlitapp.com/')"  # New tab or window
+            js = "window.open('https://viditbhatwadekar.herokuapp.com/')"  # New tab or window
             html = '<img src onerror="{}">'.format(js)
             div = Div(text=html)
             st.bokeh_chart(div)
