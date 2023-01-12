@@ -194,7 +194,7 @@ with st.container():
         st.subheader("**okbr Meme and Quote Generator**")
         st.write("*A web app, deployed using Heroku, which displays a random meme and quotation from a major Reddit meme page. Used PRAW Reddit API to scrape image and text data from a meme reddit page.* *Used* `Python`, `pandas`, `streamlit`, `heroku`, `PRAW api`")
         if st.button('Enter App', key="ews_enter"):
-            js = "window.open('https://okbr-memes.herokuapp.com/')"  # New tab or window
+            js = "window.open('https://vidit-bhatwadekar-redditmemewebapp-main-xz926n.streamlit.app/')"  # New tab or window
             html = '<img src onerror="{}">'.format(js)
             div = Div(text=html)
             st.bokeh_chart(div)
@@ -207,7 +207,7 @@ with st.container():
         st.subheader("**Personal Resume and Portfolio Website (This site)**")
         st.write("*Personal resume and project portfolio website showcasing my projects, extracurriculars and work experience. Used* `Python`, `Streamlit`, `Heroku`, `HTML`, `CSS`")
         if st.button('Enter App', key="gee_enter"):
-            js = "window.open('https://viditbhatwadekar.herokuapp.com/')"  # New tab or window
+            js = "window.open('https://vidit-bhatwadekar-personal-website-app-ygdngt.streamlit.app/')"  # New tab or window
             html = '<img src onerror="{}">'.format(js)
             div = Div(text=html)
             st.bokeh_chart(div)
