@@ -354,7 +354,7 @@ st.markdown('''
 ''')
 txt3('Languages', '`Python`, `SQL`, `Java`, `Swift`, `Javascript`, `R`, `HTML`, `CSS`, `Bash`, `LATEX`')
 txt3('Libraries & Frameworks', '`pandas`, `Flask`, `scikitlearn`, `matplotlib`, `streamlit`, `seaborn`, `OpenCV`, `Tensorflow/Keras`, `node.js`, `Selenium`, `ggplot2`')
-txt3('Tools', '`Git/Github`, `Heroku`, `Docker`, `Postman`, `Streamlit Cloud`, `AWS`, `SQLite`, `PostgreSQL`, `Anaconda`, `Pip`, `XCode`, `iPython`, `Linux`')
+txt3('Tools', '`Git/Github`, `Heroku`, `Docker`, `MongoDB`, `Postman`, `Streamlit Cloud`, `AWS`, `SQLite`, `PostgreSQL`, `Anaconda`, `Pip`, `XCode`, `iPython`, `Linux`')
 
 #####################
 st.markdown('''
@@ -399,5 +399,5 @@ with st.container():
             """
         )
     with col2:
-        st.markdown("<p style='text-align: right;'>Made in 2022 with Python, Streamlit, HTML and CSS - Deployed using Heroku</p>", unsafe_allow_html=True)
+        st.markdown("<p style='text-align: right;'>Made in 2022 with Python, Streamlit, HTML and CSS - Deployed using Render and Streamlit Cloud</p>", unsafe_allow_html=True)
     st.write("---")
