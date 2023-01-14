@@ -164,11 +164,10 @@ st.markdown('''
 txt('**Software & Data Intern**, AtHum | *Remote (United States)*',
 'Feb 2020 - Aug 2020')
 st.markdown('''
-- Assembled a highly accurate straight-line detector `(99% of clearly visible straight lines detected)` by applying the Hough Transform to images using the OpenCV library - this detector was used in the development of an augmented reality apartment designer web application
 - Built a set of tools, using pandas, to clean and encode client survey data to be used in the building of a Natural Language Processing model
 - Programmed a tool to calculate the thematic "Jaccard Similarity" between descriptions of rooms in survey data
-- Assembled an preliminary 30-D Word2Vec model using Keras to use for mean-values in the subsequent building of a Gaussian Mixture Model for thematic room descriptors
-- Used `Python`, `Pandas`, `OpenCV`, `ScikitLearn`, `Keras/Tensorflow`, `Docker`
+- Conducted preliminary research into the building of various machine learning and computer vision models including the building of a word2vec and Hough-Transform line detection model
+- Used `Python`, `Pandas`, `OpenCV`, `ScikitLearn`, `Docker`
 ''')
 
 txt('**Software Engineer Intern**, OliveX | *Hong Kong S.A.R*',
@@ -192,7 +191,7 @@ with st.container():
     col1, col2 = st.columns(2)
     with col1:
         st.subheader("**okbr Meme and Quote Generator**")
-        st.write("*A web app, deployed using Heroku, which displays a random meme and quotation from a major Reddit meme page. Used PRAW Reddit API to scrape image and text data from a meme reddit page.* *Used* `Python`, `pandas`, `streamlit`, `heroku`, `PRAW api`")
+        st.write("*A web app, deployed using Heroku, which displays a random meme and quotation from a Reddit meme page. Used PRAW Reddit API to scrape image and text data from a meme reddit page.* *Used* `Python`, `pandas`, `streamlit`, `heroku`, `PRAW api`")
         if st.button('Enter App', key="ews_enter"):
             js = "window.open('https://vidit-bhatwadekar-redditmemewebapp-main-xz926n.streamlit.app/')"  # New tab or window
             html = '<img src onerror="{}">'.format(js)
@@ -352,7 +351,7 @@ st.markdown(
 st.markdown('''
 # Tech Stack
 ''')
-txt3('Languages', '`Python`, `SQL`, `Java`, `Swift`, `Javascript`, `R`, `HTML`, `CSS`, `Bash`, `LATEX`')
+txt3('Languages', '`Python`, `SQL`, `Java`, `Mongo Querying Language`, `Swift`, `Javascript`, `R`, `HTML`, `CSS`, `Bash`, `LATEX`')
 txt3('Libraries & Frameworks', '`pandas`, `Flask`, `scikitlearn`, `matplotlib`, `streamlit`, `seaborn`, `OpenCV`, `Tensorflow/Keras`, `node.js`, `Selenium`, `ggplot2`')
 txt3('Tools', '`Git/Github`, `Heroku`, `Docker`, `MongoDB`, `Postman`, `Streamlit Cloud`, `AWS`, `SQLite`, `PostgreSQL`, `Anaconda`, `Pip`, `XCode`, `iPython`, `Linux`')
 
