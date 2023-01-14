@@ -141,7 +141,7 @@ txt('B.A. in Data Science *(Emphasis in Applied Mathematics and Modelling)*',
 '')
 
 st.markdown('''
-- Relevant Courses: `Machine Learning`, `Data Engineering`, `Data Mining`, `Artificial Intelligence`, `Inference and Decision Theory`, `Data Structures`, `Structure of Computer Programs`, `Linear Algebra and Differential Equations`, `Multivariable Calculus`, `Non-linear and Discrete Optimization`, `Principles of Data Science`, `Economic Modelling`, `Probability`
+- Relevant Courses: `Data Mining & Machine Learning`, `Data Engineering`, `Data Mining`, `Artificial Intelligence`, `Inference and Decision Theory`, `Data Structures`, `Structure of Computer Programs`, `Linear Algebra and Differential Equations`, `Multivariable Calculus`, `Non-linear and Discrete Optimization`, `Principles of Data Science`, `Economic Modelling`, `Probability`
 - Activities and Societies: `DiversaTech Consulting`, `Student Association for Applied Statistics (SAAS)`, `DataGood`, `Intermural Soccer`, `Intermural Basketball`
 ''')
 
