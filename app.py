@@ -191,7 +191,7 @@ with st.container():
     col1, col2 = st.columns(2)
     with col1:
         st.subheader("**okbr Meme and Quote Generator**")
-        st.write("*A web app, deployed using Heroku, which displays a random meme and quotation from a Reddit meme page. Used PRAW Reddit API to scrape image and text data from a meme reddit page.* *Used* `Python`, `pandas`, `streamlit`, `heroku`, `PRAW api`")
+        st.write("*A web app, deployed using Heroku, which displays a random meme and quotation from a Reddit meme page. Used PRAW Reddit API to scrape image and text data from a meme reddit page.* *Used* `Python`, `pandas`, `streamlit`, `heroku`, `PRAW api` - Taken offline temporarily")
         if st.button('Enter App', key="ews_enter"):
             js = "window.open('https://vidit-bhatwadekar-redditmemewebapp-main-xz926n.streamlit.app/')"  # New tab or window
             html = '<img src onerror="{}">'.format(js)
