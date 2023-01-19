@@ -190,15 +190,15 @@ with st.container():
 
     col1, col2 = st.columns(2)
     with col1:
-        st.subheader("**okbr Meme and Quote Generator**")
-        st.write("*A web app, deployed using Heroku, which displays a random meme and quotation from a Reddit meme page. Used PRAW Reddit API to scrape image and text data from a meme reddit page.* *Used* `Python`, `pandas`, `streamlit`, `heroku`, `PRAW api` - Taken offline temporarily")
+        st.subheader("**Movie2Vec: Movie Recommendation Engine**")
+        st.write("*Team project - built a Movie2Vec NLP model by training on a dataset of 10,000 movies and their descriptions. Built movie recommender webapp using model which recommends movies either by allowing users to 1. input a description of the type of movie they want, or 2. add and subtract movies they’ve seen intuitively")
         if st.button('Enter App', key="ews_enter"):
-            js = "window.open('https://vidit-bhatwadekar-redditmemewebapp-main-xz926n.streamlit.app/')"  # New tab or window
+            js = "window.open('https://vidit-bhatwadekar-movie2vec-webapp-q6ziv0.streamlit.app/')"  # New tab or window
             html = '<img src onerror="{}">'.format(js)
             div = Div(text=html)
             st.bokeh_chart(div)
         if st.button('Github', key="ews_github"):
-            js = "window.open('https://github.com/Vidit-Bhatwadekar/RedditMemeWebApp')"  # New tab or window
+            js = "window.open('https://github.com/Vidit-Bhatwadekar/Movie2Vec')"  # New tab or window
             html = '<img src onerror="{}">'.format(js)
             div = Div(text=html)
             st.bokeh_chart(div)
