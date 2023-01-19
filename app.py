@@ -191,7 +191,7 @@ with st.container():
     col1, col2 = st.columns(2)
     with col1:
         st.subheader("**Movie2Vec: Movie Recommendation Engine**")
-        st.write("*Team project - built a Movie2Vec NLP model by training on a dataset of 10,000 movies and their descriptions. Built movie recommender webapp using model which recommends movies either by allowing users to 1. input a description of the type of movie they want, or 2. add and subtract movies they’ve seen intuitively")
+        st.write("*Team project - built a Movie2Vec NLP model by training on a dataset of 10,000 movies and their descriptions. Built movie recommender webapp using model which recommends movies either by allowing users to 1. input a description of the type of movie they want, or 2. add and subtract movies they’ve seen intuitively. Used* `Python`, `Streamlit`, `Gensim`, `Pandas`")
         if st.button('Enter App', key="ews_enter"):
             js = "window.open('https://vidit-bhatwadekar-movie2vec-webapp-q6ziv0.streamlit.app/')"  # New tab or window
             html = '<img src onerror="{}">'.format(js)
