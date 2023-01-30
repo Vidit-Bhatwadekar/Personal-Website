@@ -193,7 +193,7 @@ with st.container():
         st.subheader("**Movie2Vec: Movie Recommendation Engine**")
         st.write("*Team project - built a Movie2Vec NLP model by training on a dataset of 10,000 movies and their descriptions. Built movie recommender webapp using model which recommends movies either by allowing users to 1. input a description of the type of movie they want, or 2. add and subtract movies they’ve seen intuitively. Used* `Python`, `Streamlit`, `Gensim`, `Pandas`")
         if st.button('Enter App', key="ews_enter"):
-            js = "window.open('https://vidit-bhatwadekar-movie2vec-webapp-q6ziv0.streamlit.app/')"  # New tab or window
+            js = "window.open('https://movie2vec.streamlit.app/')"  # New tab or window
             html = '<img src onerror="{}">'.format(js)
             div = Div(text=html)
             st.bokeh_chart(div)
@@ -206,7 +206,7 @@ with st.container():
         st.subheader("**Personal Resume and Portfolio Website (This site)**")
         st.write("*Personal resume and project portfolio website showcasing my projects, extracurriculars and work experience. Used* `Python`, `Streamlit`, `Heroku`, `HTML`, `CSS`")
         if st.button('Enter App', key="gee_enter"):
-            js = "window.open('https://vidit-bhatwadekar-personal-website-app-ygdngt.streamlit.app/')"  # New tab or window
+            js = "window.open('https://viditbhatwadekar.streamlit.app/')"  # New tab or window
             html = '<img src onerror="{}">'.format(js)
             div = Div(text=html)
             st.bokeh_chart(div)
