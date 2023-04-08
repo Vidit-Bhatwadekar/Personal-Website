@@ -150,6 +150,17 @@ st.markdown('''
 st.markdown('''
 # Work Experience
 ''')
+            
+txt('**Software Engineer Intern**, Cupid.travel | *Menlo Park, CA*',
+'Feb 2023 - Present')
+st.markdown('''
+- Spearheaded the development of a major product by assembling an autonomous hotel-data scraping and storage pipeline
+- Assembled a web-scraper, using Selenium, which scrapes hotel pricing data across multiple days from multiple hotel websites
+- Sped-up the scraping algorithm by a factor of 3 by utilizing a multithreading and asynchronous computing
+- Assembled a database on BigQuery to store the hotel-room and pricing data
+- Automated the entire scraping, cleaning and storage pipeline by hosting scripts on an AWS EC2 instance.
+- Used `Python`, `Selenium`, `BigQuery`, `AWS EC2`, `JSON`, `Pandas`
+''')
 
 txt('**Software Engineer Intern**, Privé Technologies | *Hong Kong S.A.R*',
 'Jun 2021 - Aug 2021')
