@@ -172,16 +172,6 @@ st.markdown('''
 - Used `Python`, `Git/Github`, `XML`, `Pandas`
 ''')
 
-txt('**Software & Data Intern**, AtHum | *Remote (United States)*',
-'Feb 2020 - Aug 2020')
-st.markdown('''
-- Assembled a highly accurate straight-line detector (99% of clearly visible straight lines detected) by applying the Hough-Transform to images using the OpenCV library - this detector was used in the development of an augmented reality apartment visualisation application
-- Built a set of tools, using pandas, to clean and encode client survey data to be used in the building of a Natural Language Processing model
-- Programmed a tool to calculate the thematic "Jaccard Similarity" between descriptions of rooms in survey data
-- Conducted preliminary research into the building of various machine learning and computer vision models including the building of a word2vec and Hough-Transform line detection model
-- Used `Python`, `Pandas`, `OpenCV`, `ScikitLearn`, `Docker`
-''')
-
 txt('**Software Engineer Intern**, OliveX | *Hong Kong S.A.R*',
 'Jun 2019 - Aug 2019')
 st.markdown('''
